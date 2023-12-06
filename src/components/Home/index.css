@@ -1,0 +1,227 @@
+.homeFullContainer {
+  padding: 50px;
+  background: #f5f7fa;
+}
+
+.findText {
+  color: var(--light-blue-gray-800, #1e293b);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Inter';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 160% */
+}
+
+.paraText {
+  color: var(--light-blue-gray-600, #475569);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+}
+
+.sliderAndBtnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 16px;
+  background: #fff;
+  padding: 24px;
+
+  /* Light / Shadow / base */
+  box-shadow: 0px 1px 2px 0px rgba(96, 97, 112, 0.16),
+    0px 0px 1px 0px rgba(40, 41, 61, 0.08);
+  flex-shrink: 0;
+}
+
+.topBooksAndButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topHeadText {
+  color: var(--light-blue-gray-800, #1e293b);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+
+.findBooksBtn {
+  border-radius: 4px;
+  background: #0284c7;
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--light-blue-gray-50, #f8fafc);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+}
+
+.bookViewContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+}
+
+.coverImage {
+  width: 100%;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.tryButton {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.333px;
+  border-radius: 8px;
+  background: #0284c7;
+  color: var(--light-base-white, #fff);
+  font-family: Inter;
+  font-size: 9.333px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 171.429% */
+}
+
+.failureView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-container {
+  min-height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.findBooksBtnSmScreen {
+  display: none;
+}
+
+.paraTextOf {
+  color: var(--light-blue-gray-600, #475569);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+}
+
+.sliderForSmallScreens {
+  display: none;
+}
+@media screen and (max-width: 786px) {
+  .sliderForLargeScreens {
+    display: none;
+  }
+
+  .findText {
+    color: var(--light-blue-gray-800, #1e293b);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 160% */
+  }
+  .headingAndParaContainer {
+    padding: 20px;
+  }
+
+  .homeFullContainer {
+    padding: 0px;
+    background: #f5f7fa;
+  }
+  .sliderForSmallScreens {
+    display: block;
+  }
+  .findBooksBtn {
+    display: none;
+  }
+
+  .topHeadText {
+    color: var(--light-blue-gray-700, #334155);
+    text-align: center;
+    font-feature-settings: 'clig' 'off', 'liga' 'off';
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 133.333% */
+  }
+
+  .paraText {
+    color: var(--light-blue-gray-600, #475569);
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 120% */
+  }
+
+  .findBooksBtnSmScreen {
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: #0284c7;
+    color: var(--light-blue-gray-50, #f8fafc);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    margin: 12px;
+  }
+
+  .paraTextOf {
+    color: var(--light-blue-gray-600, #475569);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+  }
+}

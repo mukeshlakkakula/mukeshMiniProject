@@ -1,0 +1,148 @@
+.HeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 89px;
+  flex-shrink: 0;
+  border: 1px solid var(--basic-300, #e4e7eb);
+  background: var(--text-color-alternative, #fff);
+}
+
+.imgAndHomeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.logoImage {
+  width: 133px;
+  height: 41.001px;
+  flex-shrink: 0;
+}
+
+.home {
+  color: #0284c7;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.buttonText {
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #f8fafc;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  border-radius: 4px;
+  background: #0284c7;
+}
+
+.homeButtonContainer {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.NavbarContainer {
+  display: none;
+}
+
+.navContainer {
+  display: none;
+}
+
+.navContainerOf {
+  display: none;
+}
+
+.noNavContainerOf {
+  display: none;
+}
+
+@media screen and (max-width: 786px) {
+  .homeButtonContainer {
+    display: none;
+  }
+
+  .HeaderContainer {
+    width: 100%;
+    height: 56px;
+    flex-shrink: 0;
+  }
+
+  .logoImage {
+    width: 92px;
+    height: 24.002px;
+    flex-shrink: 0;
+  }
+
+  .homeOf {
+    color: #0284c7;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Inter';
+  }
+
+  .buttonTextOf {
+    border-radius: 4px;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px;
+    background: #0284c7;
+  }
+  .colorTextOf {
+    color: var(--light-blue-gray-500, #64748b);
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Inter';
+  }
+  .NavbarContainer {
+    display: flex;
+    width: 16px;
+    height: 16px;
+
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .noNavContainerOf {
+    display: none;
+  }
+  .navContainerOf {
+    display: flex;
+
+    width: 100%;
+  }
+
+  .navDisplay {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding-right: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.colorText {
+  color: var(--light-blue-gray-500, #64748b);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}

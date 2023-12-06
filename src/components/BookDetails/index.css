@@ -1,0 +1,113 @@
+.tryButton {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.333px;
+  border-radius: 8px;
+  background: #0284c7;
+  color: var(--light-base-white, #fff);
+  font-family: Inter;
+  font-size: 9.333px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 171.429% */
+}
+
+.failureView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-container {
+  min-height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.finalSuccessBookDetails {
+  border-radius: 16px;
+  background: #fff;
+  padding: 20px;
+  /* Light / Shadow / base */
+  box-shadow: 0px 1px 2px 0px rgba(96, 97, 112, 0.16),
+    0px 0px 1px 0px rgba(40, 41, 61, 0.08);
+}
+hr {
+  background: #94a3b8;
+  color: #94a3b8;
+}
+
+.heading {
+  color: var(--light-blue-gray-700, #334155);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+
+.para {
+  color: var(--light-blue-gray-600, #475569);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.imageBook {
+  width: 235px;
+  margin: 20px;
+  height: 274px;
+  flex-shrink: 0;
+  border-radius: 14.131px;
+}
+
+.fullContainer {
+  background: #f5f7fa;
+  padding: 54px;
+}
+
+.imgAndBookDetailsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 786px) {
+  .imgAndBookDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .fullContainer {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+  .finalSuccessBookDetails {
+    border-radius: 16px;
+    width: 100%;
+    background: transparent;
+    padding: 20px;
+    /* Light / Shadow / base */
+    box-shadow: none;
+  }
+}
